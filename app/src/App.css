@@ -1,0 +1,75 @@
+.conexus-shell {
+  padding: 18px 24px;
+}
+
+.conexus-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.conexus-header {
+  margin-bottom: 18px;
+  padding: 10px 0 16px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.08);
+}
+
+.conexus-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.conexus-brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.conexus-brand:hover {
+  color: var(--text);
+}
+
+.conexus-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.conexus-nav a {
+  color: var(--accent-dark);
+  font-weight: 500;
+}
+
+.conexus-nav a:hover {
+  color: var(--accent-deep);
+}
+
+.conexus-main {
+  width: 100%;
+}
+
+.conexus-main > * {
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .conexus-shell {
+    padding: 14px 16px;
+  }
+
+  .conexus-header {
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .conexus-brand-row {
+    gap: 12px;
+  }
+
+  .conexus-nav {
+    gap: 12px;
+  }
+}

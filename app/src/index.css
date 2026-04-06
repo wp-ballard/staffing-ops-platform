@@ -1,0 +1,234 @@
+:root {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #190E05;
+  background-color: #f6f3ee;
+
+  --bg: #f6f3ee;
+  --bg-elevated: #fbf8f3;
+  --surface: rgba(255, 253, 249, 0.82);
+  --surface-solid: #fffdf9;
+  --control-surface: #e9e1d6;
+  --text: #190E05;
+  --muted: #745F46;
+  --border: rgba(116, 95, 70, 0.18);
+  --border-strong: rgba(116, 95, 70, 0.28);
+  --primary: #28444C;
+  --primary-soft: rgba(40, 68, 76, 0.1);
+  --primary-hover: #190E05;
+  --accent-light: #e3dbd0;
+  --accent-mid: #c7b7a2;
+  --accent-dark: #28444C;
+  --accent-deep: #190E05;
+  --accent-ink: #190E05;
+  --shadow-sm: 0 6px 18px rgba(25, 14, 5, 0.04);
+  --shadow-md: 0 14px 34px rgba(25, 14, 5, 0.06);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: linear-gradient(180deg, #f8f4ee 0%, #f1ece4 100%);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8f4ee 0%, #f1ece4 100%);
+  color: var(--text);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 4vw, 3.5rem);
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+  line-height: 1.15;
+}
+
+p {
+  margin-top: 0;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.64rem 1rem;
+  font-size: 0.84rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: inherit;
+  background: var(--control-surface);
+  color: #190E05;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background 0.16s ease, color 0.16s ease, border-color 0.16s ease;
+}
+
+button:hover {
+  background: #190E05;
+  color: #fffdf9;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(82, 109, 106, 0.18);
+  background: #190E05;
+  color: #fffdf9;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(82, 109, 106, 0.18);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  padding: 0.78rem 0.9rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: var(--border-strong);
+}
+
+input[type="checkbox"] {
+  accent-color: #526D6A;
+}
+
+input[type="checkbox"]:focus,
+input[type="checkbox"]:focus-visible {
+  box-shadow: 0 0 0 2px rgba(82, 109, 106, 0.16);
+}
+
+::selection {
+  background: rgba(40, 68, 76, 0.14);
+}
+
+.small-button,
+button.small,
+button.compact {
+  padding: 0.46rem 0.72rem;
+  font-size: 0.78rem;
+  border-radius: 8px;
+}
+
+.subtle-button {
+  background: var(--control-surface);
+  color: var(--text);
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+
+.subtle-button:hover {
+  background: #190E05;
+  color: #fffdf9;
+}
+
+.button-like {
+  appearance: none;
+  border: 1px solid transparent;
+  background: var(--control-surface);
+  color: var(--text);
+  padding: 0.72rem 1rem;
+  border-radius: 12px;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.16s ease, color 0.16s ease, opacity 0.16s ease;
+}
+
+.button-like:hover,
+.button-like:focus,
+.button-like:focus-visible {
+  background: #190E05;
+  color: #fffdf9;
+  outline: none;
+}
+
+.button-like--primary {
+  background: #190E05;
+  color: #fffdf9;
+}
+
+.button-like--primary:hover,
+.button-like--primary:focus,
+.button-like--primary:focus-visible {
+  background: #28444c;
+  color: #fffdf9;
+}
+
+.button-like--compact {
+  padding: 0.58rem 0.9rem;
+  font-size: 0.82rem;
+  border-radius: 10px;
+}
