@@ -41,3 +41,19 @@ app/                  React application source
 docs/                 Architecture notes and screenshots
 supabase/schema/      Curated database schema
 supabase/functions/   Representative Edge Functions
+```
+
+## Included showcase components
+
+### React application
+The `app/` folder contains the front-end application used to manage core staffing operations workflows.
+
+### Curated schema
+The `supabase/schema/application-schema.sql` file contains a curated schema export focused on the application-specific database design.
+
+### Edge Functions
+The `supabase/functions/` folder contains representative backend automation logic. The included payroll XML import function demonstrates authentication, file processing, XML parsing, deduplication, record normalization, consultant matching, and unmatched exception handling.
+
+## Notes
+
+This repository is presented as a curated portfolio case study. Some naming, structure, and contents have been simplified or generalized for public sharing.
