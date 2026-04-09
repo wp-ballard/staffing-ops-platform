@@ -1,5 +1,7 @@
 # Staffing Ops Platform
 
+This repository is presented as a curated portfolio case study. Some naming, structure, and contents have been simplified or generalized for public sharing.
+
 Internal staffing operations system built to support invoice automation, consultant tracking, purchase order management, payroll import processing, and billing workflow visibility.
 
 ## Overview
@@ -67,7 +69,3 @@ The `supabase/functions/` folder contains representative backend automation logi
 
 ### Purchase orders overview
 ![Purchase Orders Overview](docs/screenshots/po_page.png)
-
-## Notes
-
-This repository is presented as a curated portfolio case study. Some naming, structure, and contents have been simplified or generalized for public sharing.
