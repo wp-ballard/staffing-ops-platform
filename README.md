@@ -54,6 +54,20 @@ The `supabase/schema/application-schema.sql` file contains a curated schema expo
 ### Edge Functions
 The `supabase/functions/` folder contains representative backend automation logic. The included payroll XML import function demonstrates authentication, file processing, XML parsing, deduplication, record normalization, consultant matching, and unmatched exception handling.
 
+## Screenshots
+
+### Payroll import runs
+![Payroll Import Runs](docs/screenshots/import_runs_page.png)
+
+### Billable preview
+![Billable Preview](docs/screenshots/billable_preview.png)
+
+### Purchase order details
+![Purchase Order Details](docs/screenshots/po_details.png)
+
+### Purchase orders overview
+![Purchase Orders Overview](docs/screenshots/po_page.png)
+
 ## Notes
 
 This repository is presented as a curated portfolio case study. Some naming, structure, and contents have been simplified or generalized for public sharing.
